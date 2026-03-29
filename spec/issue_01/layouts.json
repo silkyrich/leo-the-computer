@@ -1,0 +1,213 @@
+{
+  "_domain": "layout_designer",
+  "_signed_off": true,
+
+  "issue_number": 1,
+  "page_count": 4,
+
+  "pages": [
+    {
+      "page_number": 1,
+      "layout_template": "layout_p1",
+      "grid_notes": "Cover/opener. Big left panel dominates — Cadby Hall as the establishing presence. Two stacked right panels give warmth then the sharp farthing question.",
+      "information_density": "low",
+      "panels": [
+        {
+          "id": "p1_f1",
+          "slot": "panel-big",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "characters": [],
+          "props": [],
+          "environment": "cadby_hall_exterior",
+          "css_overrides": {}
+        },
+        {
+          "id": "p1_f2",
+          "slot": "panel-top-right",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "characters": ["nippy"],
+          "props": [],
+          "environment": "corner_house",
+          "css_overrides": {}
+        },
+        {
+          "id": "p1_f3",
+          "slot": "panel-bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "characters": ["nippy"],
+          "props": ["farthing"],
+          "environment": "corner_house",
+          "css_overrides": {}
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "layout_template": "layout_k",
+      "grid_notes": "The human computer factory. Top pair mirrors the two factory types. Wide middle delivers the scale. Bottom pair closes with the daily routine and the farthing callback.",
+      "information_density": "medium",
+      "panels": [
+        {
+          "id": "p2_f1",
+          "slot": "panel-top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "wide",
+          "characters": [],
+          "props": [],
+          "environment": "food_factory",
+          "css_overrides": {}
+        },
+        {
+          "id": "p2_f2",
+          "slot": "panel-top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "wide",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator"],
+          "environment": "checking_dept",
+          "css_overrides": {}
+        },
+        {
+          "id": "p2_f3",
+          "slot": "panel-wide",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide_cinematic",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator", "leather_bags"],
+          "environment": "checking_dept",
+          "css_overrides": {}
+        },
+        {
+          "id": "p2_f4",
+          "slot": "panel-bottom-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "characters": ["office_boy"],
+          "props": ["leather_bags"],
+          "environment": "checking_dept",
+          "css_overrides": {}
+        },
+        {
+          "id": "p2_f5",
+          "slot": "panel-bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator", "farthing"],
+          "environment": "checking_dept",
+          "css_overrides": {}
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "layout_template": "layout_k",
+      "grid_notes": "Simmons sees the answer. The notebook panel is the emotional hinge — it must sit opposite the boardroom. The Nippy wide shot breathes. Automatic closes without a caption.",
+      "information_density": "medium",
+      "panels": [
+        {
+          "id": "p3_f1",
+          "slot": "panel-top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "boardroom",
+          "css_overrides": {}
+        },
+        {
+          "id": "p3_f2",
+          "slot": "panel-top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "characters": [],
+          "props": ["notebook_1923"],
+          "environment": null,
+          "css_overrides": {}
+        },
+        {
+          "id": "p3_f3",
+          "slot": "panel-wide",
+          "aspect_ratio": "16:9",
+          "shot_type": "medium_wide",
+          "characters": ["nippy"],
+          "props": [],
+          "environment": "corner_house",
+          "css_overrides": {}
+        },
+        {
+          "id": "p3_f4",
+          "slot": "panel-bottom-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "simmons_office_night",
+          "css_overrides": {}
+        },
+        {
+          "id": "p3_f5",
+          "slot": "panel-bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": null,
+          "css_overrides": {}
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "layout_template": "layout_k_final",
+      "grid_notes": "Time compression. Top pair establishes the arc start and the long middle effort. Wide panel delivers the bitter irony of wartime. Bottom left: the door opens. Bottom right: coming next — not a panel, a promise.",
+      "information_density": "medium",
+      "panels": [
+        {
+          "id": "p4_f1",
+          "slot": "panel-top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "checking_dept",
+          "css_overrides": {}
+        },
+        {
+          "id": "p4_f2",
+          "slot": "panel-top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium_wide",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "boardroom",
+          "css_overrides": {}
+        },
+        {
+          "id": "p4_f3",
+          "slot": "panel-wide",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "characters": [],
+          "props": [],
+          "environment": "teashop_self_service_1945",
+          "css_overrides": {}
+        },
+        {
+          "id": "p4_f4",
+          "slot": "panel-bottom-left",
+          "aspect_ratio": "4:3",
+          "shot_type": "medium_close",
+          "characters": ["simmons"],
+          "props": ["memo_1947"],
+          "environment": "simmons_office_night",
+          "css_overrides": {}
+        }
+      ],
+      "coming_next_slot": "panel-bottom-right"
+    }
+  ]
+}

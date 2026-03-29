@@ -1,0 +1,130 @@
+{
+  "id": "ai-isnt-my-cup-of-tea",
+  "title": "AI Isn't My Cup of Tea",
+  "subtitle": "LEO — The First Business Computer",
+  "premise": "Every computer before LEO was built for war. Colossus broke Enigma. ENIAC aimed artillery. In 1951, a tea company in Hammersmith built the first computer used for business. This is our story.",
+
+  "style_guide": {
+    "primary_style": "1950s pen-and-ink illustration, engraving style, cross-hatching",
+    "colour_palette": ["sepia #b8956a", "warm black #1c1008", "cream #f5f0e2", "warm shadow #8a6a48"],
+    "tone": "warm, documentary, melancholic optimism — the weight of history made intimate",
+    "rendering_notes": "Fine cross-hatching for shadow. Clean linework. No digital gradients. Looks hand-drawn. Sepia wash over ink. Period-accurate architecture, clothing, machinery. No anachronisms."
+  },
+
+  "narrator": {
+    "id": "robot_narrator",
+    "name": "The Robot",
+    "identity": "The narrator is an avatar for computer intelligence — not LEO specifically. The broader voice of computing, speaking from the present, looking back at where it all started.",
+    "voice": "Warm, wry, first-person. Never says 'AI' or labels itself. Just speaks.",
+    "reference_image": "generated/images/robot_narrator_story_so_far.png"
+  },
+
+  "characters": [
+    {
+      "id": "simmons",
+      "name": "J.R.M. Simmons",
+      "description": "Systems comptroller at J. Lyons & Co. Methodical, patient, visionary. Wore glasses. Quiet conviction rather than charisma.",
+      "reference_image": "asset_sets/set_1950s_ink/characters/simmons.png",
+      "visual_notes": "Middle-aged British man, late 30s–50s across the story arc. Glasses. Conservative 1930s–1950s suit. Dark hair, neatly combed. Often seen at desks, in boardrooms, or alone with papers. Expression: watchful, never dramatic."
+    },
+    {
+      "id": "nippy",
+      "name": "Nippy",
+      "description": "A Lyons Corner House waitress. The human face of the empire. Precise, composed, professional.",
+      "reference_image": "asset_sets/set_1950s_ink/characters/nippy.png",
+      "visual_notes": "Black dress, white apron, white cap. Carries a tray. Moves with practised efficiency. 1930s London. Warm expression, but focused on her work."
+    },
+    {
+      "id": "clerk_woman",
+      "name": "Checking Department Clerk",
+      "description": "One of three hundred women operating Burroughs adding machines in the Checking Department.",
+      "reference_image": null,
+      "visual_notes": "1930s–1940s office dress. Hair pinned up. Seated at a wooden desk partition with a Burroughs adding machine. Focused downward on her work. Represents all three hundred — not an individual."
+    },
+    {
+      "id": "office_boy",
+      "name": "Office Boy",
+      "description": "Young male clerk who sorts the numbered leather bags from teashops each morning.",
+      "reference_image": "asset_sets/set_1950s_ink/characters/office_boy.png",
+      "visual_notes": "Teenager or early 20s. Waistcoat, rolled sleeves. Working at a long wooden sorting table. Methodical."
+    }
+  ],
+
+  "recurring_props": [
+    {
+      "id": "farthing",
+      "name": "Farthing coin",
+      "description": "A single pre-decimal British farthing coin. Small, worn, copper.",
+      "reference_image": "asset_sets/set_1950s_ink/props/farthing.png"
+    },
+    {
+      "id": "burroughs_calculator",
+      "name": "Burroughs Adding Machine",
+      "description": "A 1930s mechanical Burroughs adding machine. Black metal body, numbered keys, paper roll output.",
+      "reference_image": "asset_sets/set_1950s_ink/props/burroughs_calculator.png"
+    },
+    {
+      "id": "leather_bags",
+      "name": "Numbered Leather Bags",
+      "description": "Locked leather satchels numbered by teashop. Arrive each morning from across the city.",
+      "reference_image": "asset_sets/set_1950s_ink/props/leather_bags.png"
+    },
+    {
+      "id": "notebook_1923",
+      "name": "Simmons's 1923 Notebook",
+      "description": "An open notebook showing handwritten text dated 1923: 'The day will come when machines will do this work.'",
+      "reference_image": "asset_sets/set_1950s_ink/props/notebook_1923.png"
+    },
+    {
+      "id": "memo_1947",
+      "name": "1947 Memo",
+      "description": "A typed internal memo dated October 1947. Subject: study tour to American computing laboratories.",
+      "reference_image": "asset_sets/set_1950s_ink/props/memo_1947.png"
+    }
+  ],
+
+  "recurring_environments": [
+    {
+      "id": "cadby_hall_exterior",
+      "name": "Cadby Hall Exterior",
+      "description": "The vast Lyons headquarters and factory complex in Hammersmith, West London. Victorian industrial brick, iron gates, delivery lorries.",
+      "reference_image": null,
+      "lighting_notes": "Overcast London sky. Morning fog. Diffuse grey light. Warm interior light glimpsed through windows."
+    },
+    {
+      "id": "corner_house",
+      "name": "Corner House Dining Room",
+      "description": "A grand Lyons Corner House restaurant. Chandeliers, white tablecloths, wood panelling. Busy with ordinary Londoners.",
+      "reference_image": null,
+      "lighting_notes": "Warm interior. Tungsten light. Evening or afternoon. Welcoming."
+    },
+    {
+      "id": "checking_dept",
+      "name": "Checking Department",
+      "description": "The vast clerical hall at Cadby Hall. Rows of wooden desk partitions extending to a vanishing point. Burroughs machines at every desk. Three hundred women working in near-silence.",
+      "reference_image": "asset_sets/set_1950s_ink/environments/checking_dept.png",
+      "lighting_notes": "Overhead industrial fluorescent. Flat, institutional. No warmth."
+    },
+    {
+      "id": "food_factory",
+      "name": "Cadby Hall Food Factory",
+      "description": "Industrial cake and food production. Conveyor belts, baking machinery, steel and steam. One worker supervising many machines.",
+      "reference_image": "asset_sets/set_1950s_ink/environments/food_factory.png",
+      "lighting_notes": "Industrial. Steam and heat. Bright overhead."
+    },
+    {
+      "id": "boardroom",
+      "name": "Lyons Boardroom",
+      "description": "A formal 1930s boardroom. Wood-panelled walls, long table, suited directors. Charts on a stand at one end.",
+      "reference_image": "asset_sets/set_1950s_ink/environments/boardroom.png",
+      "lighting_notes": "Natural window light from one side. Formal, slightly tense."
+    },
+    {
+      "id": "simmons_office_night",
+      "name": "Simmons's Office — Evening",
+      "description": "A modest private office. Wooden desk stacked with papers. Single desk lamp. London rooftops visible through the window at night.",
+      "reference_image": "asset_sets/set_1950s_ink/environments/simmons_office_night.png",
+      "lighting_notes": "Single warm tungsten desk lamp. Everything else in shadow. Window shows dark city."
+    }
+  ]
+}

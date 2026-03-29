@@ -1,0 +1,107 @@
+{
+  "_domain": "artist",
+  "_note": "Maps panel IDs to approved image paths, relative to project root.",
+
+  "p1_f1": {
+    "path": "generated/images/pages/issue-01-v3/i01_p1_f1_cadby_exterior.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p1_f2": {
+    "path": "generated/images/pages/issue-01-v3/i01_p1_f2_corner_house.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p1_f3": {
+    "path": "generated/images/pages/issue-01-v3/i01_p1_f3_farthing.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p2_f1": {
+    "path": "generated/images/pages/issue-01-v3/i01_p2_f1_food_factory.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p2_f2": {
+    "path": "generated/images/pages/issue-01-v3/i01_p2_f2_number_factory_v2.png",
+    "status": "approved",
+    "attempts": 2,
+    "css_overrides": {}
+  },
+  "p2_f3": {
+    "path": "generated/images/pages/issue-01-v3/i01_p2_f3_clerks_wide_v2.png",
+    "status": "approved",
+    "attempts": 2,
+    "css_overrides": {}
+  },
+  "p2_f4": {
+    "path": "generated/images/pages/issue-01-v3/i01_p2_f4_leather_bags_v3.png",
+    "status": "approved",
+    "attempts": 3,
+    "css_overrides": {}
+  },
+  "p2_f5": {
+    "path": "generated/images/pages/issue-01-v3/i01_p2_f5_hands_farthing_v3.png",
+    "status": "approved",
+    "attempts": 3,
+    "css_overrides": {}
+  },
+  "p3_f1": {
+    "path": "generated/images/pages/issue-01-v3/i01_p3_f1_boardroom.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p3_f2": {
+    "path": "generated/images/pages/issue-01-v3/i01_p3_f2_notebook_v2.png",
+    "status": "approved",
+    "attempts": 2,
+    "css_overrides": {}
+  },
+  "p3_f3": {
+    "path": "generated/images/pages/issue-01-v3/i01_p3_f3_nippy_wide.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p3_f4": {
+    "path": "generated/images/pages/issue-01-v3/i01_p3_f4_simmons_night.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p3_f5": {
+    "path": "generated/images/pages/issue-01-v3/i01_p3_f5_automatic.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p4_f1": {
+    "path": "generated/images/pages/issue-01-v3/i01_p4_f1_first_week.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p4_f2": {
+    "path": "generated/images/pages/issue-01-v3/i01_p4_f2_systems_team.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p4_f3": {
+    "path": "generated/images/pages/issue-01-v3/i01_p4_f3_self_service.png",
+    "status": "approved",
+    "attempts": 1,
+    "css_overrides": {}
+  },
+  "p4_f4": {
+    "path": "generated/images/pages/issue-01-v3/i01_p4_f4_the_memo_v3.png",
+    "status": "approved",
+    "attempts": 3,
+    "css_overrides": {}
+  }
+}

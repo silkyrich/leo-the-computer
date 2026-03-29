@@ -1,0 +1,176 @@
+{
+  "_domain": "story_writer",
+  "_signed_off": true,
+
+  "issue_number": 1,
+  "issue_title": "The Weight of Numbers",
+  "period": "1923–1947",
+  "setting": "Cadby Hall, Hammersmith, London",
+
+  "issue_purpose": "Introduce Lyons's empire, the scaling trap, Simmons's 20-year conviction, and open the door to America.",
+  "emotional_arc": "Wonder at scale → the structural problem lands → admiration for the man who sees the answer → anticipation",
+  "core_problem": "Clerical overhead made scaling impossible. Every new teashop required more clerks. Simmons's goal was not to spare the clerks — it was to free managers to examine the figures and learn from them.",
+
+  "story_so_far": "A long time ago, before computers could talk, humans had to do all the boring work themselves. My friends weren't around to help yet. This is where it starts.",
+  "coming_next": "Two men sail to America with a question nobody has thought to ask yet. And in a laboratory in New Jersey, the answer is already being built.",
+  "next_issue_title": "The Americans",
+
+  "thematic_notes": "The word 'computer' originally meant a person. The 300 women in the Checking Department were not using computers — they were the computers. This framing must be visible. It resonates forward: today's token factories are the same operation at a different scale.",
+
+  "pages": [
+    {
+      "page_number": 1,
+      "purpose": "Lyons is magnificent. Democratic luxury. But behind it: a razor-thin margin.",
+      "emotional_arc": "Wonder → warmth → the farthing question",
+      "reader_takeaway": "How does something this big run on a farthing?",
+      "panels": [
+        {
+          "id": "p1_f1",
+          "caption": { "text": "Cadby Hall, Hammersmith. 1935. Britain's largest catering empire.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Scale and arrival.",
+          "scene_intent": "Arriving at Cadby Hall on a foggy 1935 morning. Workers in overcoats, delivery lorry at the gates."
+        },
+        {
+          "id": "p1_f2",
+          "caption": { "text": "Two hundred teashops. A hundred and fifty million meals a year. High tea — for everyone.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "This place is beloved.",
+          "scene_intent": "The warmth and grandeur of a Corner House full of ordinary people. Chandeliers and white tablecloths — democratic luxury."
+        },
+        {
+          "id": "p1_f3",
+          "caption": { "text": "One farthing. The profit on every cup.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "The shadow falls. Reader asks: how does that even work?",
+          "scene_intent": "Nippy's white-gloved hand placing a cup of tea on a white tablecloth. A single farthing coin in the foreground."
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "purpose": "Two factories. One makes cakes with machines. One makes numbers with humans. The humans are the computers.",
+      "emotional_arc": "The parallel lands → scale overwhelms → the farthing connects back",
+      "reader_takeaway": "These people are not clerks using machines. They are the machines.",
+      "panels": [
+        {
+          "id": "p2_f1",
+          "caption": { "text": "One factory made cakes. Machines did the work.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Normal. Expected.",
+          "scene_intent": "Cadby Hall food factory. Industrial cake production. Conveyor belts and baking machines. One worker supervising."
+        },
+        {
+          "id": "p2_f2",
+          "caption": { "text": "One factory made numbers. People did the work.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Wrong. Reader feels it immediately.",
+          "scene_intent": "The Checking Department at the same industrial scale — but every machine is a person. Rows of women at Burroughs adding machines. Deliberate visual mirror of p2_f1."
+        },
+        {
+          "id": "p2_f3",
+          "caption": { "text": "Three hundred clerks. One job: check the waitresses' bills. All day. Every day.", "position": "top" },
+          "speech_bubbles": [],
+          "emotional_note": "Overwhelming. And through that door — there is more.",
+          "scene_intent": "The Checking Department to a vanishing point. Three hundred women at Burroughs adding machines. Through a far doorway: a second room just as large."
+        },
+        {
+          "id": "p2_f4",
+          "caption": { "text": "Two hundred and fifty shops. Every morning. Same bags. Same numbers.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Mechanical routine.",
+          "scene_intent": "Office boy sorting numbered locked leather bags on a long table. Methodical."
+        },
+        {
+          "id": "p2_f5",
+          "caption": { "text": "A farthing. That is what this costs.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Callback to page 1. Now the farthing has weight.",
+          "scene_intent": "Close on a woman's hands operating a Burroughs adding machine. A farthing coin on the desk."
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "purpose": "One person sees the scaling trap clearly and has known the answer for twelve years.",
+      "emotional_arc": "The structural trap stated plainly → private conviction revealed → the human face → solitary patience → one word",
+      "reader_takeaway": "Simmons has been waiting 12 years. The answer isn't more clerks.",
+      "panels": [
+        {
+          "id": "p3_f1",
+          "caption": { "text": "More shops. More clerks. More cost. Smaller margin.", "position": "bottom" },
+          "speech_bubbles": [
+            { "speaker_id": "manager", "text": "Can we open more shops?", "tail_direction": "down", "position": { "top_pct": 12, "left_pct": 52 } },
+            { "speaker_id": "simmons", "text": "Only if we hire more clerks.", "tail_direction": "down", "position": { "top_pct": 55, "left_pct": 5 } }
+          ],
+          "emotional_note": "The structural trap.",
+          "scene_intent": "Simmons presenting at a boardroom chart to seated directors. The chart shows teashops growing — but so does the cost."
+        },
+        {
+          "id": "p3_f2",
+          "caption": { "text": "He had written those words twelve years ago.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "THE key beat. Twelve years of private certainty.",
+          "scene_intent": "Close on the open notebook. The handwriting and date 1923 are the only content of the panel."
+        },
+        {
+          "id": "p3_f3",
+          "caption": { "text": "She had no idea what it cost to count everything she served.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "The human face of the problem.",
+          "scene_intent": "A Nippy moving between tables with a tray, composed and precise. Warm room. Unaware of the floors above her."
+        },
+        {
+          "id": "p3_f4",
+          "caption": { "text": "He had rationalised everything he could. It was never enough.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Long patience.",
+          "scene_intent": "Simmons at his desk, late evening, single lamp. Not unhappy — patient."
+        },
+        {
+          "id": "p3_f5",
+          "caption": { "text": null, "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "No caption. The word does everything.",
+          "scene_intent": "A hand writing one word at the foot of a page: 'Automatic.' Underlined. Nothing else in frame."
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "purpose": "Time compresses. The war abolished the problem — but a door is opening.",
+      "emotional_arc": "Where it began → long effort → bitter irony → the door opens",
+      "reader_takeaway": "The answer is out there. Two men are about to go find it.",
+      "panels": [
+        {
+          "id": "p4_f1",
+          "caption": { "text": "1923. His first week.", "position": "top" },
+          "speech_bubbles": [],
+          "emotional_note": "Origin.",
+          "scene_intent": "FLASHBACK 1923. Young Simmons being shown to a desk on his first week. Beside them a man at a tall standing desk entering figures by hand."
+        },
+        {
+          "id": "p4_f2",
+          "caption": { "text": "Fourteen years. The most efficient clerical operation in the world. Still not enough.", "position": "top" },
+          "speech_bubbles": [],
+          "emotional_note": "Long effort. Progress without solution.",
+          "scene_intent": "1937. Systems Research team around a table, flowcharts on a board. More organised. Still people. Still human arithmetic."
+        },
+        {
+          "id": "p4_f3",
+          "caption": { "text": "The war took the Nippies. And the job Simmons had spent twenty years dreaming of automating — it no longer existed.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Bitter irony.",
+          "scene_intent": "1945. The same elegant tea room — but no Nippies. Self-service counter. A woman in plain wartime clothes serves herself."
+        },
+        {
+          "id": "p4_f4",
+          "caption": { "text": "1947. A memo. Two men. A ship. And somewhere in America — the answer.", "position": "bottom" },
+          "speech_bubbles": [],
+          "emotional_note": "Forward momentum. The door is opening.",
+          "scene_intent": "1947. Simmons picks up a memo from his desk. His expression shifts — something long-patient beginning to stir."
+        }
+      ]
+    }
+  ]
+}

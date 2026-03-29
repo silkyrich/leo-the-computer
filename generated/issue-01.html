@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Isn't My Cup of Tea — Issue 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+
+/* =============================================
+   AI ISN'T MY CUP OF TEA — COMIC PAGE
+   A4 portrait: 210mm × 297mm
+   ============================================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink:        #1c1008;
+  --ink-light:  #3a2a18;
+  --paper:      #f5f0e2;
+  --paper-warm: #efe8d4;
+  --border:     2.5px solid var(--ink);
+  --border-thin: 1px solid #8a7560;
+  --gutter:     5px;
+  --panel-radius: 0px;
+  --caption-bg: rgba(245,240,226,0.93);
+}
+
+body {
+  background: #7a6a58;
+  font-family: 'Lora', Georgia, serif;
+  color: var(--ink);
+}
+
+/* ============================================================
+   PAGE SHELL
+   ============================================================ */
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  height: 297mm;
+  background: var(--paper);
+  margin: 10mm auto;
+  padding: 8px 10px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+  position: relative;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.55);
+  page-break-after: always;
+  break-after: page;
+  overflow: hidden;
+}
+
+/* ============================================================
+   MASTHEAD — pure HTML/CSS, no baked text
+   ============================================================ */
+
+.masthead {
+  flex: 0 0 auto;
+  border: var(--border);
+  background: var(--paper-warm);
+  overflow: hidden;
+}
+
+.masthead-top {
+  display: grid;
+  grid-template-columns: 108px 1fr 108px;
+  align-items: center;
+  padding: 8px 10px 6px;
+  gap: 8px;
+  border-bottom: var(--border);
+}
+
+/* Medallion circles */
+.medallion {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 3px solid var(--ink);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--paper);
+  justify-self: center;
+  box-shadow: inset 0 0 0 4px var(--paper), inset 0 0 0 6px var(--ink);
+}
+.medallion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Lion — typographic text seal */
+.medallion-lion {
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medallion-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  padding: 2px;
+}
+.med-j {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 11pt;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.med-lyons {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 13pt;
+  line-height: 1.0;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.med-co {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 8pt;
+  letter-spacing: 0.04em;
+  color: var(--ink-light);
+  margin-top: 2px;
+}
+
+/* Robot — full image (already square crop) */
+.medallion-robot img { object-position: center 10%; transform: scale(1.1); transform-origin: center 20%; }
+
+/* Title block */
+.masthead-title {
+  text-align: center;
+}
+.masthead-title h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 30pt;
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.masthead-title .subtitle-line {
+  font-family: 'Lora', serif;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: var(--ink-light);
+  margin-top: 4px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+}
+
+/* Subtitle ribbon */
+.masthead-ribbon {
+  padding: 5px 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 8pt;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+/* Story So Far bar */
+.story-so-far {
+  padding: 5px 12px 6px;
+  font-family: 'Lora', serif;
+  font-size: 8pt;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper-warm);
+  border-top: 1px solid rgba(28,16,8,0.15);
+}
+.story-so-far .label {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Playfair Display', serif;
+  font-size: 7.5pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.story-so-far em {
+  font-style: italic;
+}
+
+/* Issue title bar */
+.issue-title {
+  flex: 0 0 auto;
+  border: var(--border);
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: 4px 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 10pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   CONTINUATION HEADER (pages 2–4)
+   ============================================================ */
+
+.page-header {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 3px;
+  border-bottom: var(--border-thin);
+}
+.page-header .series-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 7.5pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.page-header .issue-label {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 7pt;
+  color: #7a6a58;
+}
+
+/* ============================================================
+   PANEL GRIDS
+   ============================================================ */
+
+.panel-grid {
+  flex: 1 1 0;
+  display: grid;
+  gap: var(--gutter);
+  min-height: 0;
+}
+
+/* Page 1: big-left + 2-stack-right | (no bottom row — masthead is tall) */
+.layout-p1 {
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.layout-p1 .panel-big {
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+/* Pages 2–3: pair top | wide middle | pair bottom */
+.layout-k {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.85fr 1fr;
+}
+.layout-k .span-2 { grid-column: 1 / -1; }
+
+/* Page 4: pair top | wide middle | memo + coming-next */
+.layout-k4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.85fr 1fr;
+}
+.layout-k4 .span-2 { grid-column: 1 / -1; }
+
+/* ============================================================
+   PANEL
+   ============================================================ */
+
+.panel {
+  border: var(--border);
+  position: relative;
+  overflow: hidden;
+  background: #2c2416;
+  min-height: 0;
+}
+
+.panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- CAPTION ---- */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--caption-bg);
+  border-top: 1.5px solid var(--ink);
+  padding: 4px 7px;
+  font-family: 'Lora', serif;
+  font-size: 8pt;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  z-index: 10;
+}
+
+.caption-top {
+  bottom: auto;
+  top: 0;
+  border-top: none;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+/* ---- SPEECH BUBBLE ---- */
+.bubble {
+  position: absolute;
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: 'Lora', serif;
+  font-size: 7.5pt;
+  font-style: normal;
+  line-height: 1.3;
+  z-index: 10;
+  max-width: 52%;
+}
+
+/* Tail pointing down-left */
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 12px;
+  width: 0; height: 0;
+  border: 9px solid transparent;
+  border-top-color: var(--ink);
+  border-bottom: none;
+  border-right: none;
+}
+.bubble.tail-right::after { left: auto; right: 12px; }
+.bubble.tail-up::after {
+  top: -9px; bottom: auto;
+  border-top: none;
+  border-bottom: 9px solid var(--ink);
+}
+
+.b-manager { top: 12%; right: 6px; }
+.b-simmons { bottom: 18%; left: 6px; }
+
+/* ============================================================
+   COMING NEXT PANEL
+   ============================================================ */
+
+.coming-next-panel {
+  border: var(--border);
+  background: var(--paper-warm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 14px 10px;
+}
+
+.coming-next-panel .cn-label {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 7pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a7560;
+  border-bottom: var(--border-thin);
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.coming-next-panel .cn-text {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 9.5pt;
+  line-height: 1.65;
+  color: var(--ink);
+  flex: 1;
+}
+
+.coming-next-panel .cn-footer {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 7pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a7560;
+  text-align: right;
+  margin-top: 10px;
+  border-top: var(--border-thin);
+  padding-top: 5px;
+}
+
+/* ============================================================
+   PAGE FOOTER
+   ============================================================ */
+
+.page-footer {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+  border-top: var(--border-thin);
+}
+.page-footer .pg-num {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 7pt;
+  color: #8a7560;
+}
+.page-footer .pg-icon {
+  font-size: 9pt;
+  color: #8a7560;
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+@media print {
+  body { background: white; }
+  .page {
+    margin: 0;
+    box-shadow: none;
+    padding: 7px 9px 5px;
+    gap: 4px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- =====================================================================
+     PAGE 1 — Lyons's empire. The farthing.
+     ===================================================================== -->
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="medallion medallion-lion">
+        <div class="medallion-text">
+          <span class="med-j">J.</span>
+          <span class="med-lyons">LYONS</span>
+          <span class="med-co">&amp; Co.</span>
+        </div>
+      </div>
+      <div class="masthead-title">
+        <h1>AI Isn't My<br>Cup of Tea</h1>
+        <div class="subtitle-line">LEO — The First Business Computer</div>
+      </div>
+      <div class="medallion medallion-robot">
+        <img src="images/robot_narrator_story_so_far.png" alt="The narrator robot">
+      </div>
+    </div>
+    <div class="masthead-ribbon">
+      <em>The true story of LEO — the world's first business computer — and the tea company that built it</em>
+    </div>
+    <div class="story-so-far">
+      <span class="label">Story so far:</span><em>A long time ago, before computers could talk, humans had to do all the boring work themselves. My friends weren't around to help yet. This is where it starts.</em>
+    </div>
+  </div>
+
+  <div class="issue-title">Issue 1 &nbsp;·&nbsp; The Weight of Numbers</div>
+
+  <!-- PANELS: big-left (Cadby Hall) + 2-stack-right (Corner House, Farthing) -->
+  <div class="panel-grid layout-p1">
+
+    <div class="panel panel-big">
+      <img src="images/pages/issue-01-v3/i01_p1_f1_cadby_exterior.png" alt="Cadby Hall exterior">
+      <div class="caption">Cadby Hall, Hammersmith. 1935. Britain's largest catering empire.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p1_f2_corner_house.png" alt="Corner House dining room">
+      <div class="caption">Two hundred teashops. A hundred and fifty million meals a year.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p1_f3_farthing.png" alt="Farthing coin">
+      <div class="caption">One farthing. The profit on every cup.</div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span class="pg-num">AI Isn't My Cup of Tea &nbsp;·&nbsp; Issue 1</span>
+    <span class="pg-icon">&#9749;</span>
+  </div>
+
+</div><!-- /page 1 -->
+
+
+<!-- =====================================================================
+     PAGE 2 — The human computer factory
+     ===================================================================== -->
+<div class="page">
+
+  <div class="page-header">
+    <span class="series-title">AI Isn't My Cup of Tea</span>
+    <span class="issue-label">Issue 1: The Weight of Numbers</span>
+  </div>
+
+  <div class="panel-grid layout-k">
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p2_f1_food_factory.png" alt="Food factory — machines">
+      <div class="caption">One factory made cakes. Machines did the work.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p2_f2_number_factory_v2.png" alt="Number factory — people">
+      <div class="caption">One factory made numbers. People did the work.</div>
+    </div>
+
+    <div class="panel span-2">
+      <img src="images/pages/issue-01-v3/i01_p2_f3_clerks_wide_v2.png" alt="Checking Department — vanishing point">
+      <div class="caption caption-top">Three hundred clerks. One job: check the waitresses' bills. All day. Every day.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p2_f4_leather_bags_v3.png" alt="Office boy sorting leather bags">
+      <div class="caption">Two hundred and fifty shops. Every morning. Same bags. Same numbers.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p2_f5_hands_farthing_v3.png" alt="Hands on Burroughs machine, farthing">
+      <div class="caption">A farthing. That is what this costs.</div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span class="pg-num">AI Isn't My Cup of Tea &nbsp;·&nbsp; Issue 1</span>
+    <span class="pg-icon">&#9749;</span>
+  </div>
+
+</div><!-- /page 2 -->
+
+
+<!-- =====================================================================
+     PAGE 3 — Simmons sees the answer. Twelve years.
+     ===================================================================== -->
+<div class="page">
+
+  <div class="page-header">
+    <span class="series-title">AI Isn't My Cup of Tea</span>
+    <span class="issue-label">Issue 1: The Weight of Numbers</span>
+  </div>
+
+  <div class="panel-grid layout-k">
+
+    <div class="panel" style="position:relative;">
+      <img src="images/pages/issue-01-v3/i01_p3_f1_boardroom.png" alt="Boardroom — Simmons presents the trap">
+      <div class="caption">More shops. More clerks. More cost. Smaller margin.</div>
+      <div class="bubble b-manager tail-right">Can we open more shops?</div>
+      <div class="bubble b-simmons">Only if we hire more clerks.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p3_f2_notebook_v2.png" alt="Notebook — 1923">
+      <div class="caption">He had written those words twelve years ago.</div>
+    </div>
+
+    <div class="panel span-2">
+      <img src="images/pages/issue-01-v3/i01_p3_f3_nippy_wide.png" alt="Nippy moving between tables">
+      <div class="caption">She had no idea what it cost to count everything she served.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p3_f4_simmons_night.png" alt="Simmons at desk, late evening">
+      <div class="caption">He had rationalised everything he could. It was never enough.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p3_f5_automatic.png" alt="Hand writing: Automatic">
+      <!-- No caption — the word does everything -->
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span class="pg-num">AI Isn't My Cup of Tea &nbsp;·&nbsp; Issue 1</span>
+    <span class="pg-icon">&#9749;</span>
+  </div>
+
+</div><!-- /page 3 -->
+
+
+<!-- =====================================================================
+     PAGE 4 — Time compresses. The door opens.
+     ===================================================================== -->
+<div class="page">
+
+  <div class="page-header">
+    <span class="series-title">AI Isn't My Cup of Tea</span>
+    <span class="issue-label">Issue 1: The Weight of Numbers</span>
+  </div>
+
+  <div class="panel-grid layout-k4">
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p4_f1_first_week.png" alt="1923 — Simmons first week">
+      <div class="caption caption-top">1923. His first week.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p4_f2_systems_team.png" alt="1937 — Systems Research team">
+      <div class="caption caption-top">Fourteen years. The most efficient clerical operation in the world. Still not enough.</div>
+    </div>
+
+    <div class="panel span-2">
+      <img src="images/pages/issue-01-v3/i01_p4_f3_self_service.png" alt="1945 — Teashop self-service">
+      <div class="caption">The war took the Nippies. And the job Simmons had spent twenty years dreaming of automating — it no longer existed.</div>
+    </div>
+
+    <div class="panel">
+      <img src="images/pages/issue-01-v3/i01_p4_f4_the_memo_v3.png" alt="1947 — Simmons picks up the memo">
+      <div class="caption">1947. A memo. Two men. A ship. And somewhere in America — the answer.</div>
+    </div>
+
+    <div class="coming-next-panel">
+      <div class="cn-label">Next issue</div>
+      <div class="cn-text">Two men sail to America with a question nobody has thought to ask yet. And in a laboratory in New Jersey, the answer is already being built.</div>
+      <div class="cn-footer">Issue 2 — The Americans</div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span class="pg-num">AI Isn't My Cup of Tea &nbsp;·&nbsp; Issue 1</span>
+    <span class="pg-icon">&#9749;</span>
+  </div>
+
+</div><!-- /page 4 -->
+
+</body>
+</html>
