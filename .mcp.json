@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mcp-image": {
+      "command": "node",
+      "args": [
+        "/Users/richardmorgan/Documents/GitHub/mcp-image-leo/dist/index.js"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "AIzaSyDvLHjONCaXGCfgjIwT_EjzKsXbpAcEcCw",
+        "IMAGE_OUTPUT_DIR": "/Users/richardmorgan/Documents/GitHub/leo-the-computer/generated/images",
+        "IMAGE_QUALITY": "quality",
+        "SKIP_PROMPT_ENHANCEMENT": "false"
+      }
+    }
+  }
+}

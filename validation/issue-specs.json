@@ -1,0 +1,137 @@
+{
+  "series": "AI Isn't My Cup of Tea",
+  "required_in_every_issue": {
+    "prompt_must_contain": [
+      "THE STORY SO FAR",
+      "NEXT ISSUE",
+      "monochrome",
+      "no colour",
+      "masthead",
+      "panel"
+    ],
+    "output_must_contain": [
+      "masthead with title",
+      "story so far box",
+      "next issue box",
+      "minimum 2 panels",
+      "issue number"
+    ],
+    "output_must_not_contain": [
+      "colour fills",
+      "zone label text (ZONE 1, ZONE 2)",
+      "gradient shading"
+    ]
+  },
+  "issues": {
+    "01": {
+      "title": "The Wages Problem",
+      "prompt_must_contain": [
+        "clerks",
+        "Simmons",
+        "ledger",
+        "wages",
+        "ISSUE ONE"
+      ],
+      "output_must_contain": [
+        "clerks hall or office scene",
+        "Simmons character",
+        "newspaper with headline",
+        "Story So Far box",
+        "Next Issue box",
+        "ISSUE ONE label"
+      ],
+      "panel_count": 3,
+      "characters_required": ["Simmons", "Manager"],
+      "location": "Clerks office / Cadby Hall"
+    },
+    "02": {
+      "title": "The Atlantic Crossing",
+      "prompt_must_contain": [
+        "Queen Mary",
+        "EDSAC",
+        "boardroom",
+        "Simmons",
+        "ISSUE TWO"
+      ],
+      "output_must_contain": [
+        "ocean liner or ship",
+        "EDSAC computer or valve racks",
+        "boardroom scene",
+        "telephone scene",
+        "Story So Far box",
+        "Next Issue box",
+        "ISSUE TWO label"
+      ],
+      "panel_count": 4,
+      "characters_required": ["Simmons", "Manager"],
+      "location": "Ship / Cambridge / Boardroom"
+    },
+    "03": {
+      "title": "Building the Brain",
+      "prompt_must_contain": [
+        "valve",
+        "cabinet",
+        "DANGER",
+        "computer room",
+        "ISSUE THREE"
+      ],
+      "output_must_contain": [
+        "workers carrying large cabinets",
+        "close-up of valve being inserted",
+        "Simmons and Manager in computer room",
+        "DANGER COMPUTER ROOM sign",
+        "Story So Far box",
+        "Next Issue box",
+        "ISSUE THREE label"
+      ],
+      "panel_count": 3,
+      "characters_required": ["Simmons", "Manager"],
+      "location": "Cadby Hall service entrance / Computer room"
+    },
+    "04": {
+      "title": "The Midnight Run",
+      "prompt_must_contain": [
+        "midnight",
+        "ticker tape",
+        "console",
+        "circular",
+        "ISSUE FOUR"
+      ],
+      "output_must_contain": [
+        "circular panels (3 circles)",
+        "operator at LEO console",
+        "ticker tape",
+        "Simmons with printout",
+        "Story So Far box",
+        "Next Issue box",
+        "ISSUE FOUR label"
+      ],
+      "panel_count": 3,
+      "panel_style": "circular",
+      "characters_required": ["Simmons", "operators"],
+      "location": "LEO computer room"
+    },
+    "05": {
+      "title": "Not My Cup of Tea",
+      "prompt_must_contain": [
+        "boardroom",
+        "Nippy",
+        "Preposterous",
+        "window",
+        "ISSUE FIVE"
+      ],
+      "output_must_contain": [
+        "boardroom with directors and printout",
+        "indignant director pointing",
+        "Nippy with knowing smile",
+        "LEO visible through window",
+        "Story So Far box",
+        "end-of-series closing caption",
+        "ISSUE FIVE label"
+      ],
+      "panel_count": 4,
+      "characters_required": ["Manager", "Nippy", "director"],
+      "location": "Boardroom / window view of computer room"
+    }
+  }
+}

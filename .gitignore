@@ -1,0 +1,34 @@
+# Copyrighted source text — do not commit
+chapters/
+text.txt
+
+# Conversation archives
+chatgpt.txt
+claude.txt
+archie.txt
+waterfall.txt
+
+# Generated images — too large for GitHub, keep only canonical assets and approved panels
+# Exclude bulk generated content
+generated/images/other-projects/
+generated/images/pages/issue-01/
+generated/images/pages/issue-01-v2/
+generated/images/pages/run-01-series/
+generated/images/pages/run-02-story-early/
+generated/images/pages/run-03-story-final/
+generated/images/pages/run-04-comic-issues/
+generated/images/pages/run-05-v2/
+generated/images/pages/run-06-v3/
+generated/images/pages/run-07-arc-current/
+generated/images/pages/run-08-arc-v2/
+generated/images/reference/
+generated/images/*.log.json
+generated/images/pages/issue-01-v3/outtakes/
+generated/images/pages/issue-01-v3/*.log.json
+
+# Keep: approved panels (issue-01-v3), generation logs at page level are excluded above
+# Keep: asset_sets/ in full
+# Keep: story/ in full
+
+# OS
+.DS_Store

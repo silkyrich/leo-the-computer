@@ -1,0 +1,365 @@
+{
+  "_comment": "Immutable comic spec. No file paths. No style. References IDs only. Asset sets provide the visual implementation.",
+
+  "comic": "AI Isn't My Cup of Tea",
+  "subtitle": "LEO — the First Business Computer",
+  "premise": "Every computer before LEO was built for war. Colossus broke Enigma. ENIAC aimed artillery. In 1951, a tea company in Hammersmith built the first computer used for business. This is our story.",
+  "issue_number": 1,
+  "issue_title": "The Weight of Numbers",
+  "period": "1923–1947",
+  "setting": "Cadby Hall, Hammersmith, London",
+
+  "narrator": {
+    "id": "robot_narrator",
+    "identity": "The narrator is an avatar for computer intelligence — not LEO specifically. LEO is a character in the story. The narrator is the broader voice of computing, speaking from the present, looking back at where it all started. 'Our story' means the story of all computers, not one machine's autobiography.",
+    "historical_context": "Before LEO, every computer was a war tool. Colossus broke Enigma. ENIAC calculated artillery trajectories. Computers existed — but only for war. LEO (1951) was the first computer used for a business task: running Lyons's payroll. The narrator carries this quietly. Its predecessors were weapons. It was built for tea.",
+    "voice": "Warm, wry, first-person. Never says 'AI' or labels itself. Just speaks — as someone who was there eventually, looking back at what came before. 'My friends weren't around to help yet.' The word 'computers' only when historically appropriate. The robot simply is.",
+    "framing_line": "A long time ago, before computers could talk, humans had to do all the boring work themselves. My friends weren't around to help yet.",
+    "note": "The robot image appears in narrator boxes only (story_so_far, this_issue, coming_next, selected captions). It never appears inside a story panel. It is the face of the storyteller, not a character in the story."
+  },
+
+  "issue_purpose": "Introduce Lyons's empire, the scaling trap, Simmons's 20-year conviction, and open the door to America.",
+  "emotional_arc": "Wonder at scale → the structural problem lands → admiration for the man who sees the answer → anticipation",
+  "core_problem": "The clerical overhead was a drag on the business that made scaling impossible. Every new teashop required more clerks. The farthing margin could be wiped out by inefficient clerical work. The business could not grow without growing its costs proportionally. Simmons's goal was not to spare the clerks — it was to free managers from marshalling armies of clerks so they could examine the figures, digest them, and learn from them. The human waste was real, but the business imperative was the driver.",
+  "human_computers": "The word 'computer' originally meant a person — someone whose job was to compute. The 300 women in the Checking Department were not using computers. They were the computers. A human calculation factory. This framing is deliberate and should be visible in the story. It resonates forward: today's token factories are the same operation at a different scale — humans processed numbers by hand, silicon now processes tokens by the trillion. The factory never went away. It just changed what it was made of. The narrator carries both ends: before we existed, humans were the computers.",
+
+  "pages": [
+    {
+      "page_number": 1,
+      "layout_template": "layout_H_asymmetric",
+      "purpose": "Lyons is magnificent. Democratic luxury. But behind it: a razor-thin margin.",
+      "emotional_arc": "Wonder → warmth → the farthing question",
+      "reader_takeaway": "How does something this big run on a farthing?",
+      "canva_text_layers": {
+        "story_so_far_box": {
+          "speaker": "robot_narrator",
+          "text": "A long time ago, before computers could talk, humans had to do all the boring work themselves. My friends weren't around to help yet. This is where it starts."
+        },
+        "this_issue_box": {
+          "text": "A room full of people doing machine work. A farthing's profit. And one man who sees what nobody else can see."
+        }
+      },
+      "panels": [
+        {
+          "id": "p1_f1",
+          "label": "Exterior Cadby Hall",
+          "position": "top-right",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "scene_intent": "Arriving at Cadby Hall on a foggy 1935 morning. Workers in overcoats, delivery lorry at the gates.",
+          "characters": [],
+          "props": [],
+          "environment": "cadby_hall_exterior",
+          "canva_text_layers": {
+            "caption": "Cadby Hall, Hammersmith. 1935. Britain's largest catering empire."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Scale and arrival."
+        },
+        {
+          "id": "p1_f2",
+          "label": "Corner House dining room",
+          "position": "middle-right",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "scene_intent": "The warmth and grandeur of a Corner House full of ordinary people. Chandeliers and white tablecloths — democratic luxury.",
+          "characters": ["nippy"],
+          "props": [],
+          "environment": "corner_house",
+          "canva_text_layers": {
+            "caption": "Two hundred teashops. A hundred and fifty million meals a year. High tea — for everyone."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "This place is beloved."
+        },
+        {
+          "id": "p1_f3",
+          "label": "The farthing",
+          "position": "bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "scene_intent": "Nippy's white-gloved hand placing a cup of tea on a white tablecloth. A single farthing coin in the foreground.",
+          "characters": ["nippy"],
+          "props": ["farthing"],
+          "environment": "corner_house",
+          "canva_text_layers": {
+            "caption": "One farthing. The profit on every cup."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "The shadow falls. Reader asks: how does that even work?"
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "layout_template": "layout_K_continuation",
+      "purpose": "Two factories. One makes cakes with machines. One makes numbers with humans. The humans are the computers.",
+      "emotional_arc": "The parallel lands → scale overwhelms → the farthing connects back",
+      "reader_takeaway": "These people are not clerks using machines. They are the machines. A human computer factory.",
+      "canva_text_layers": {
+        "header": "Issue 1 · Page 2"
+      },
+      "panels": [
+        {
+          "id": "p2_f1",
+          "label": "Food factory — machines",
+          "position": "top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "wide",
+          "scene_intent": "Cadby Hall food factory. Industrial cake production. Conveyor belts and baking machines running automatically. One worker supervising. This is what a modern factory looks like.",
+          "characters": [],
+          "props": [],
+          "environment": "food_factory",
+          "canva_text_layers": {
+            "caption": "One factory made cakes. Machines did the work."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Normal. Expected. Machines doing machine work."
+        },
+        {
+          "id": "p2_f2",
+          "label": "Number factory — people",
+          "position": "top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "wide",
+          "scene_intent": "The Checking Department at the same industrial scale — but every machine is a person. Rows of women at Burroughs adding machines behind wooden partitions. Deliberate visual mirror of p2_f1.",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator"],
+          "environment": "checking_dept",
+          "canva_text_layers": {
+            "caption": "One factory made numbers. People did the work."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Wrong. Reader feels it immediately."
+        },
+        {
+          "id": "p2_f3",
+          "label": "Scale — clerks hall wide",
+          "position": "middle-full",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide_cinematic",
+          "scene_intent": "The Checking Department to a vanishing point. Three hundred women at Burroughs adding machines. Through a far doorway: a second room just as large. The scale is crushing.",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator", "leather_bags"],
+          "environment": "checking_dept",
+          "canva_text_layers": {
+            "caption": "Three hundred clerks. One job: check the waitresses' bills. All day. Every day."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Overwhelming. And through that door — there is more."
+        },
+        {
+          "id": "p2_f4",
+          "label": "Leather bags",
+          "position": "bottom-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "scene_intent": "Office boy sorting numbered locked leather bags on a long table. Focused, methodical. The bags are identical, each stamped with a shop number.",
+          "characters": ["office_boy"],
+          "props": ["leather_bags"],
+          "environment": "checking_dept",
+          "canva_text_layers": {
+            "caption": "Two hundred and fifty shops. Every morning. Same bags. Same numbers."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Mechanical routine. Every single day."
+        },
+        {
+          "id": "p2_f5",
+          "label": "Hands and farthing",
+          "position": "bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "scene_intent": "Close on a woman's hands operating a Burroughs adding machine. A single farthing coin on the desk beside a teashop bill being checked.",
+          "characters": ["clerk_woman"],
+          "props": ["burroughs_calculator", "farthing"],
+          "environment": "checking_dept",
+          "canva_text_layers": {
+            "caption": "A farthing. That is what this costs."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Callback to page 1. Now the farthing has weight."
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "layout_template": "layout_K_continuation",
+      "purpose": "One person sees the scaling trap clearly and has known the answer for twelve years.",
+      "emotional_arc": "The structural trap stated plainly → private conviction revealed → the human face of the operation → solitary patience → one word",
+      "reader_takeaway": "Simmons has been waiting 12 years. The answer isn't more clerks. He just needs the technology to catch up.",
+      "canva_text_layers": {
+        "header": "Issue 1 · Page 3"
+      },
+      "panels": [
+        {
+          "id": "p3_f1",
+          "label": "Boardroom trap",
+          "position": "top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "scene_intent": "Simmons presenting at a boardroom chart to seated directors. The chart shows teashops growing — but so does the cost. Calm, tense atmosphere.",
+          "characters": ["simmons", "manager"],
+          "props": [],
+          "environment": "boardroom",
+          "canva_text_layers": {
+            "caption": "More shops. More clerks. More cost. Smaller margin."
+          },
+          "speech_bubbles": [
+            { "speaker_id": "manager", "text": "Can we open more shops?" },
+            { "speaker_id": "simmons", "text": "Only if we hire more clerks." }
+          ],
+          "emotional_note": "The structural trap. Collapsing under its own weight."
+        },
+        {
+          "id": "p3_f2",
+          "label": "The notebook — 1923",
+          "position": "top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "scene_intent": "Close on the open notebook. The handwriting and date are the only content of the panel.",
+          "characters": [],
+          "props": ["notebook_1923"],
+          "environment": null,
+          "canva_text_layers": {
+            "caption": "He had written those words twelve years ago."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "THE key beat. Twelve years of private certainty."
+        },
+        {
+          "id": "p3_f3",
+          "label": "The Nippy — human face",
+          "position": "middle-full",
+          "aspect_ratio": "16:9",
+          "shot_type": "medium_wide",
+          "scene_intent": "A Nippy moving between tables with a tray, composed and precise. Warm room. She is unaware of the floors above her.",
+          "characters": ["nippy"],
+          "props": [],
+          "environment": "corner_house",
+          "canva_text_layers": {
+            "caption": "She had no idea what it cost to count everything she served.",
+            "caption_voice": "robot_narrator"
+          },
+          "speech_bubbles": [],
+          "emotional_note": "The human face of the problem."
+        },
+        {
+          "id": "p3_f4",
+          "label": "Simmons alone, late",
+          "position": "bottom-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "scene_intent": "Simmons at his desk, late evening, single lamp. Not unhappy — patient. London through the window behind him.",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "simmons_office_night",
+          "canva_text_layers": {
+            "caption": "He had rationalised everything he could. It was never enough."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Long patience. A man who has not given up."
+        },
+        {
+          "id": "p3_f5",
+          "label": "One word: Automatic",
+          "position": "bottom-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "extreme_close",
+          "scene_intent": "A hand writing one word at the foot of a page: 'Automatic.' Underlined. Nothing else in frame.",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": null,
+          "canva_text_layers": {
+            "caption": null
+          },
+          "speech_bubbles": [],
+          "emotional_note": "No caption. The word does everything."
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "layout_template": "layout_K_final",
+      "purpose": "Time compresses. The war abolished the problem — but a door is opening.",
+      "emotional_arc": "Where it began → long effort → bitter irony → the door opens",
+      "reader_takeaway": "The answer is out there. Two men are about to go find it.",
+      "canva_text_layers": {
+        "header": "Issue 1 · Page 4"
+      },
+      "panels": [
+        {
+          "id": "p4_f1",
+          "label": "1923 — first week",
+          "position": "top-left",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium",
+          "scene_intent": "FLASHBACK 1923. Young Simmons being shown to a desk on his first week. Beside them a man at a tall standing desk entering figures by hand into a ledger. Simmons stares at the man with the ledger.",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "checking_dept",
+          "canva_text_layers": {
+            "caption": "1923. His first week."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Origin. The moment it began."
+        },
+        {
+          "id": "p4_f2",
+          "label": "1937 — rationalisation",
+          "position": "top-right",
+          "aspect_ratio": "1:1",
+          "shot_type": "medium_wide",
+          "scene_intent": "1937. Systems Research team around a table, flowcharts on a board. More organised. Still people. Still human arithmetic.",
+          "characters": ["simmons"],
+          "props": [],
+          "environment": "boardroom",
+          "canva_text_layers": {
+            "caption": "Fourteen years. The most efficient clerical operation in the world. Still not enough."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Long effort. Progress without solution."
+        },
+        {
+          "id": "p4_f3",
+          "label": "1945 — bitter irony",
+          "position": "middle-full",
+          "aspect_ratio": "16:9",
+          "shot_type": "wide",
+          "scene_intent": "1945. The same elegant tea room — but no Nippies. Self-service counter. A woman in plain wartime clothes serves herself. The room feels emptied.",
+          "characters": [],
+          "props": [],
+          "environment": "teashop_self_service_1945",
+          "canva_text_layers": {
+            "caption": "The war took the Nippies. And the job Simmons had spent twenty years dreaming of automating — it no longer existed."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Bitter irony. Problem abolished by accident, not solved."
+        },
+        {
+          "id": "p4_f4",
+          "label": "1947 — the memo",
+          "position": "bottom-left",
+          "aspect_ratio": "4:3",
+          "shot_type": "medium_close",
+          "scene_intent": "1947. Simmons picks up a memo from his desk. His expression shifts — something long-patient beginning to stir.",
+          "characters": ["simmons"],
+          "props": ["memo_1947"],
+          "environment": "simmons_office_night",
+          "canva_text_layers": {
+            "caption": "1947. A memo. Two men. A ship. And somewhere in America — the answer."
+          },
+          "speech_bubbles": [],
+          "emotional_note": "Forward momentum. The door is opening."
+        }
+      ],
+      "coming_next_box": {
+        "position": "bottom-right",
+        "speaker": "robot_narrator",
+        "canva_text_layers": {
+          "text": "Next issue: Two men sail to America with a question nobody has thought to ask yet. And in a laboratory in New Jersey, the answer is already being built."
+        }
+      }
+    }
+  ]
+}

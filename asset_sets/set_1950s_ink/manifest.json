@@ -1,0 +1,114 @@
+{
+  "set_id": "set_1950s_ink",
+  "set_name": "1950s British Ink Illustration",
+  "description": "Warm sepia tones, brown ink line work, cream backgrounds. Classic 1950s British illustrated comic style. No cool greys.",
+  "prompt_style_suffix": "1950s British ink illustration style. Warm sepia, brown line work, cream background. No colour, no cool greys.",
+
+  "masthead_column": {
+    "file": "masthead_column.png",
+    "status": "DONE",
+    "description": "Vertical masthead column for page 1 left edge. Title 'AI ISN'T MY CUP OF TEA', subtitle 'LEO — The First Business Computer', lion on plinth, Issue No. 1, Price 3d."
+  },
+
+  "palette": {
+    "file": "palette/palette_chip.png",
+    "description": "Extracted from approved Issue 1 Page 1. Cream (#F5EEDC), mid-brown (#654232), dark brown (#1D1000)."
+  },
+
+  "characters": {
+    "simmons": {
+      "file": "characters/simmons.png",
+      "visual": "Early 30s, wire-rimmed round spectacles, neat dark hair, jacket and tie. Expression: precise, analytical, patient."
+    },
+    "clerk_woman": {
+      "file": "characters/clerk_woman.png",
+      "visual": "Young woman, 1940s dress, green eyeshade visor, fingers on calculator keys. Expression: blank, automatic."
+    },
+    "nippy": {
+      "file": "characters/nippy.png",
+      "visual": "Black dress, white apron, small white cap. Composed, professional, warm."
+    },
+    "manager": {
+      "file": "characters/manager.png",
+      "visual": "Male, dark suit, clipboard or papers. Authoritative."
+    },
+    "robot_narrator": {
+      "file": "characters/robot_narrator.png",
+      "visual": "Retro 1950s robot. Warm, friendly expression. This is the narrator — the AI speaking as itself from the present day. Appears ONLY in narrator boxes (story_so_far, this_issue, coming_next, selected captions). Never inside story panels. The face of the author, not a character.",
+      "identity": "The AI narrator. Speaks in first person. 'My friends weren't around to help yet' = other AI systems. Telling its own origin story — the humans who built the first computer."
+    },
+    "office_boy": {
+      "file": "characters/office_boy.png",
+      "visual": "Young male ~16, dark waistcoat over white shirt, dark trousers, braces. Earnest focused expression. Shown sorting leather bags, carrying papers."
+    }
+  },
+
+  "props": {
+    "burroughs_calculator": {
+      "file": "props/burroughs_calculator.png",
+      "status": "DONE",
+      "visual": "1930s Burroughs adding machine. Numeric keypad only — no letter keys. Hand crank on the right side. Paper roll printing at the top. Wider and squatter than a typewriter. Heavy cast metal construction."
+    },
+    "farthing": {
+      "file": "props/farthing.png",
+      "status": "DONE",
+      "visual": "Single small copper coin. Victorian/Edwardian farthing. Shows Britannia on reverse."
+    },
+    "leather_bags": {
+      "file": "props/leather_bags.png",
+      "status": "DONE",
+      "visual": "Identical locked leather satchel bags. Each stamped with a shop number. Brass buckle clasp. Piled on a long table."
+    },
+    "notebook_1923": {
+      "file": "props/notebook_1923.png",
+      "status": "DONE",
+      "visual": "Open notebook, aged paper. Careful handwriting: 'The day will come when machines will do this work.' Underlined twice. Date in margin: 1923."
+    },
+    "memo_1947": {
+      "file": "props/memo_1947.png",
+      "status": "DONE",
+      "visual": "Typed memo on headed paper. J. LYONS & CO. LTD header. October 1947. Partial text: '...advanced office machinery in the United States... Thompson and Standingford...'"
+    },
+    "lyons_logo": {
+      "file": "props/lyons_logo.png",
+      "status": "DONE",
+      "visual": "Clean J. LYONS & CO. wordmark. Period-authentic serif lettering. Dark brown on cream. Extracted and redrawn from historical enamel sign reference."
+    }
+  },
+
+  "environments": {
+    "cadby_hall_exterior": {
+      "file": "environments/cadby_hall_exterior.jpg",
+      "description": "Grand red-brick Edwardian factory-fortress. Morning fog. Gates. Sign: J. LYONS & CO."
+    },
+    "corner_house": {
+      "file": "environments/corner_house.jpg",
+      "description": "Lyons Corner House interior. Chandeliers, white tablecloths, warm light, live band balcony."
+    },
+    "checking_dept": {
+      "file": "environments/checking_dept.png",
+      "status": "DONE",
+      "description": "Vast office floor. Rows of Burroughs adding machines behind wooden partitions. Stacks of paper bills. Locked leather bags. No eyeshades."
+    },
+    "food_factory": {
+      "file": "environments/food_factory.png",
+      "status": "DONE",
+      "description": "Industrial Cadby Hall food factory. Conveyor belts, cake trays, baking machines."
+    },
+    "boardroom": {
+      "file": "environments/boardroom.png",
+      "status": "DONE",
+      "description": "Lyons boardroom. Long table, seated directors, charts on wall."
+    },
+    "simmons_office_night": {
+      "file": "environments/simmons_office_night.png",
+      "status": "DONE",
+      "description": "Simmons's office, late evening. Single lamp, London through window."
+    },
+    "teashop_self_service_1945": {
+      "file": "environments/teashop_self_service_1945.png",
+      "status": "DONE",
+      "description": "1945 Lyons teashop, wartime self-service. No Nippies. Woman in plain clothes serving herself."
+    }
+  }
+}
